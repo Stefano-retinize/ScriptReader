@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Reader for Actors</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #scriptInput {
+            width: 100%;
+            height: 100px;
+            resize: none;
+        }
+        #output {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            min-height: 100px;
+        }
+        #runButton {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Script Reader for Actors</h1>
+    <p>Enter your script below and click the "Run Script" button to have it read aloud.</p>
+    
+    <textarea id="scriptInput" placeholder="Enter your script here..."></textarea>
+    <button id="runButton" onclick="runScript()">Run Script</button>
+
+    <div id="output"></div>
+
+    <script>
+        function runScript() {
+            // Replace this with the logic to read the script aloud
+            var scriptInput = document.getElementById('scriptInput').value;
+            var outputDiv = document.getElementById('output');
+            
+            // For demonstration purposes, simply display the script in the output
+            outputDiv.innerHTML = '<strong>Script Output:</strong><br>' + scriptInput;
+        }
+    </script>
+</body>
+</html>
